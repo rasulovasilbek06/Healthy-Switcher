@@ -430,7 +430,7 @@ main {
   grid-template-rows: repeat(3 , 150px);
 }
 .recipes--grid:nth-child(1) {
-  /* grid-template-rows: 540px; *****/
+  /***** grid-template-rows: 540px; *****/
 }
 .recips-box-grid {
   background-color: #a4a8b2;
