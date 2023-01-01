@@ -424,15 +424,264 @@ main {
   margin-left: 210px;
 }
 .recipes--grid {
-  display: grid;
   gap: 30px;
-  grid-template-columns: repeat( 2 , 540px);
-  grid-template-rows: repeat(3 , 150px);
-}
-.recipes--grid:nth-child(1) {
-  /***** grid-template-rows: 540px; *****/
+  display: grid;
+  margin-left: -45px;
+  grid-template-columns: repeat(2, 540px);
+  grid-template-rows: repeat(3, 150px);
 }
 .recips-box-grid {
   background-color: #a4a8b2;
+  border-radius: 7px;
+}
+.r-1 {
+  grid-template-rows: 740px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  background-image: url(../images/png/recipes-img-1.png);
+  background-size: cover;
+  overflow: hidden;
+}
+.r-2 {
+  grid-column: 2 / 3;
+  background-color: #252525;
+}
+.r-3 {
+  grid-column: 2 / 3;
+  background-color: #252525;
+  background-image: url(../images/png/r-3-_-img.png);
+}
+.r-4 {
+  grid-column: 2 / 3;
+  background-color: #54cf73;
+  color: #252525;
+}
+.r-4 .recipes__btn {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+.mini-conatainer {
+  padding: 60px;
+}
+.r-1-top-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000006e;
+}
+.icon__btn {
+  height: 90px;
+  display: flex;
+  margin-top: -60px;
+  margin-right: -30px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.r-1-top-icon:hover {
+  transition: all 0.3s;
+  background-color: #42ce65;
+}
+.recipes__btn {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 10px;
+  margin-top: 60px;
+  margin-right: 34%;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000006e;
+}
+.recipes__btn:hover {
+  transition: all 0.3s;
+  font-size: 11px;
+  background-color: #54cf73;
+}
+.recipes__text {
+  display: flex;
+  margin-top: 65px;
+  color: rgba(255, 255, 255, 0.897);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.recipes__text p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.recipes__text h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 45px;
+}
+.recipes__text h3 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+.eye,
+.answer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.recipes--comment {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.r-2--box {
+  /* padding: 20px; */
+  overflow: hidden;
+}
+.r-2 p {
+  padding: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.r-_-2 {
+  width: 68px;
+  height: 28px;
+  margin-top: 0;
+  margin-left: 20px;
+}
+.r-2--box .last__p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #b3b3b3;
+  margin-top: -50px;
+  margin-left: 90px;
+}
+.r-2__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.construct {
+  margin-top: -22px;
+  margin-right: 25px;
+}
+.r-3 p {
+}
+
+/* social */
+
+.social h3 {
+  margin-left: 90px;
+}
+.social hr {
+  margin-left: 190px;
+}
+.r-4 .last__p {
+  color: #000;
+}
+
+
+.last-grid {
+  gap: 30px;
+  margin-left: -50px;
+  display: grid;
+  grid-template-columns: repeat(3 , 350px);
+  grid-template-rows: 330px;
+  margin-bottom: 120px;
+}
+.last-box {
+  border-radius: 8px;
+  background-color: #252525;
+}
+.last-box-top {
+  width: 100%;
+  display: flex;
+  padding: 25px 25px;
+  align-items: center;
+}
+.last-box-top img {
+}
+.last-box-top h2 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: -20px;
+}
+.last-box-top .follow-btn {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  font-size: 10px;
+  font-weight: 900;
+  margin-left: 20%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 2px solid #303030;
+}
+.follow-btn:hover {
+  transition: all 0.3s;
+  font-size: 11px;
+  background-color: #34c759;
+}
+.last-box a {
+  width: 30%;
+
+}
+.last-box hr {
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-color: #303030;
+}
+.one-and-two {
+  padding: 20px 35px;
+}
+.one-and-two h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 10px;
+}
+.one-and-two p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.701);
+}
+.dennis {
+  font-weight: 400;
+  font-size: 14px;
+  color: #34c759;
+}
+.dennis:hover {
+  font-size: 15px;
+  transition: all 0.3s;
+}
+.lb-two__imgs {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(3 , 1fr);
 }
 /* main END */
+
+
+
+
+/* footer */
+footer {
+  width: 100%;
+  height: 275px;
+  background-color: #252525;
+}
+.bottom__box {
+  /* display: flex;   */
+}
+/* footer END*/
